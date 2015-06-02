@@ -10,22 +10,44 @@
 
 <!-- Main content -->
 <section class="content">
-
-  <!-- Default box -->
+   <!-- Default box -->
   <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title">Google</h3>
-      <div class="box-tools pull-right">
-        <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
-        <button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
-      </div>
+      <h3 class="box-title">Modifier mon profil</h3>
     </div>
     <div class="box-body">
-      Start creating your amazing application!
-    </div><!-- /.box-body -->
-    <div class="box-footer">
-      Footer
-    </div><!-- /.box-footer-->
-  </div><!-- /.box -->
+      <div class="login-box-body">
+          <form method="post" action="#" id="formulaire">
 
+
+       <div class="row">
+            <div class="col-s-12 col-m-4">
+            <h4>Avatar</h4>  
+             <div style="text-align:center;">
+                  <p>
+                    <img class="img-circle" gravatar="passport.user.email">
+                  </p>
+              </div>
+
+              <div class="form-group email required user_email"><label class="email required control-label" for="user_email"><abbr title="requis"></abbr> Email</label><input class="string email required form-control" autofocus="autofocus" type="email"  name="user[email]" id="user_email" /></div>
+
+
+              <div class="form-group string required user_username"><label class="string required control-label" for="user_username"><abbr title="requis"></abbr> Pseudo</label><input class="string required form-control" type="text"  name="user[username]" id="user_username" /></div>
+
+
+              <div class="form-group password optional user_password"><label class="password optional control-label" for="user_password">Mot de passe</label><input class="password optional form-control" type="password" name="user[password]" id="user_password" /></div>
+
+              <div class="form-group password optional user_password_confirmation"><label class="password optional control-label" for="user_password_confirmation">Confirmation du mot de passe</label><input class="password optional form-control" type="password" name="user[password_confirmation]" id="user_password_confirmation" /></div>
+
+              <input type="submit" name="commit" value="Mettre à jour" class="btn btn-primary" />
+            </div>
+
+
+
+
+
+          </form>
+       </div> 
+    </div><!-- /.box-body -->
+  </div><!-- /.box -->
         </section><!-- /.content -->
